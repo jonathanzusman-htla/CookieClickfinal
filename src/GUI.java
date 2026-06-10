@@ -109,21 +109,21 @@ public class GUI implements ActionListener {
 
         buttonPanel.setSize(200,300);
         textPanel.setSize(200,100);
-        textPanel.setBackground(Color.RED);
+        textPanel.setBackground(Color.GRAY);
         textPanel.setLayout(new GridLayout(1,2));
 
 
         frame.add(buttonPanel, BorderLayout.NORTH);
         frame.add(textPanel, BorderLayout.SOUTH);
         frame.add(fillerPanel, BorderLayout.CENTER);
-        frame.add(fillerPanel);
+       // frame.add(fillerPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(600, 500);
         frame.setBackground(Color.RED);
         buttonPanel.setLayout(new GridLayout(4,2));
-        fillerPanel.setBackground(Color.RED);
+        fillerPanel.setBackground(Color.GRAY);
         frame.setVisible(true);
-
+        buttonPanel.setBackground(Color.LIGHT_GRAY);
 
         guiUpdate = new ActionListener() {
 
